@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/bank.css">
 </head>
 <body>
+<header class="header">
+    <div class="header-back">
+        <img src="img/backwhite.png" alt="">
+    </div>
+    <div class="header-title">
+        人才银行
+    </div>
+</header>
+<main>
+    <div class="bank-banner">
+        <div class="review-box">
+            <span class="line-box">
+                <span class="line-inner"></span>
+            </span>
+            <ul class="status-box">
+                <li>
+                   <span class="dot-box on">
+                       <span class="dot-inner">
+                       </span>
+                   </span>
+                    <p>待审核</p>
+                </li>
+                <li>
+                   <span class="dot-box">
+                       <span class="dot-inner">
+                       </span>
+                   </span>
+                    <p>审核中</p>
+                </li>
+                <li>
+                   <span class="dot-box">
+                       <span class="dot-inner">
+                       </span>
+                   </span>
+                    <p>放款成功</p>
+                </li>
+            </ul>
+            <div class="credit-box">
+                <div class="card-logo">
+                    <img src="img/spd-logo.png" alt="">
+                </div>
+                <p>
+                    授信额度：<span>100,000</span>
+                </p>
+            </div>
+        </div>
+    </div>
 
+    <div class="apply-quota">
+        <span class="apply-cate">申请额度:</span><input class="apply-num" type="text" value="0.00元">
+        <button class="apply-sub">提交</button>
+    </div>
+    <a href="#" class="go-top">Top</a>
+</main>
+<footer>
+    <div class="foo-item">
+        <a href="">
+            <div class="img-box">
+                <img src="img/foo-outline.png" alt="">
+            </div>
+            <p>评测体验</p>
+        </a>
+    </div>
+    <div class="foo-item on">
+        <a href="">
+            <div class="img-box">
+                <img src="img/foo-personne-on.png" alt="">
+            </div>
+            <p>人才有价</p>
+        </a>
+    </div>
+    <div class="foo-item">
+        <a href="">
+            <div class="img-box">
+                <img src="img/foo-value.png" alt="">
+            </div>
+            <p>人人有价</p>
+        </a>
+    </div>
+</footer>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(window).scroll(function () {
+        var scroHei = $(window).scrollTop();//滚动的高度
+        if (scroHei > 50) {
+            $(".header").css("background", "#1578e7");
+        } else {
+            $(".header").css("background", "none");
+        }
+        if (scroHei > 200) {
+            $(".go-top").fadeIn();
+        } else {
+            $(".go-top").fadeOut();
+        }
+    })
+</script>
 </body>
 </html>
