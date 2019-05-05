@@ -3,4 +3,4 @@
 
 ##review-progress审核进度
 ###
-![Image text](./img/show.png)
+![效果图](https://raw.githubusercontent.com/ideshun/example/master/review-progress/img/show.png)
