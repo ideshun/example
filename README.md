@@ -1,7 +1,7 @@
 # example
 我的小案例
 
-## review-progress审核进度
+## progress-bar-percentage 带百分比进度条
 1. 详细介绍请查看[我的博客](https://www.w3h5.com/post/298.html)
 2. 根据Bootstrap改写的一个进度条，显示百分比。
 3. 百分比跟随进度条变化，进度条动态效果可选。
