@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="css/progressbar.css">
+</head>
+<body>
+<main>
+    <!--线性进度-->
+    <div class="eval-module">
+        <div class="value-show">
+            <!-- 过渡代码 开始 -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active">
+                                <div class="progress-value">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="js/jquery-3.1.1.min.js"></script>
+
+<script>
+    var a = 0,
+    timer = setInterval(function () {
+        a++ //10-11秒 a+=10=>1-2秒
+        $(".progress-value").html(a + "%");
+        $(".progress-bar").width(a + "%");
+        if (a == 100) {
+            clearInterval(timer);//清除定时器
+            $(".progress-bar").removeClass("active");
+            location.href = "#";//跳转链接
+        }
+    }, 100);
+</script>
+</body>
+</html>
