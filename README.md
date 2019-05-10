@@ -6,7 +6,7 @@
 2. 根据Bootstrap改写的一个进度条，显示百分比。
 3. 百分比跟随进度条变化，进度条动态效果可选。
 4. 效果图：  
-![效果图](https://raw.githubusercontent.com/ideshun/example/master/progress-bar-percentage/show.png)
+![效果图](https://raw.githubusercontent.com/ideshun/example/master/progress-bar-percentage/show.gif)
 
 ## review-progress审核进度
 1. 详细介绍请查看[我的博客](https://www.w3h5.com/post/291.html)
