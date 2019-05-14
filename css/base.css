@@ -1,0 +1,21 @@
+body{
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #424242;
+}
+
+img{
+    width: 200px;
+}
+@media (min-width: 800px) {
+    .row{
+        margin-left: 100px;
+    }
+}
+@media (max-width: 799px){
+    .row{
+        margin: 20px;
+    }
+}
