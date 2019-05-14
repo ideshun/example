@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
     <title>Welcome <?php echo $_SERVER['HTTP_HOST']; ?> 欢迎访问德顺下载站</title>
     <link rel="stylesheet" href="css/mustard-ui.min.css">
     <link rel="stylesheet" href="css/base.css">
