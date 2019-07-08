@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover, a:visited, a:link, a:active, a:focus {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*解决手机版点击背景问题*/
+}
+
+button{
+    display: block;
+    line-height: 50px;
+    width: 80%;
+    margin: 40% auto;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #3B79FE;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.customer-modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 58% 10% 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    text-align: center;
+}
+
+.modal-box {
+    background: #FFF;
+    border-radius: 8px;
+}
+
+.modal-box p {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.modal-box small {
+    margin: 25px 0;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    color: #AEB5C5;
+}
+
+.modal-confirm {
+    border-top: 1px solid #DAE2F3;
+    display: flex;
+    height: 48px;
+    line-height: 48px;
+}
+
+.modal-confirm span, .modal-confirm a {
+    display: block;
+    width: 50%;
+}
+
+.modal-confirm #confirm {
+    border-left: 1px solid #DAE2F3;
+    color: #3B79FE;
+}

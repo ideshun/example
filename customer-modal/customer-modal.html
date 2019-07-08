@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-selable=no">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button onclick="customer('确定要拨打0531-88888888？','tel:0531-88888888','拨打')">联系客服</button>
+<div class="customer-modal">
+    <div class="modal-box">
+        <p>提示</p>
+        <small></small>
+        <div class="modal-confirm">
+            <span onClick="cancleModal()">取消</span>
+            <a id="confirm" href="">拨打</a>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script>
+function customer(text, href, btnText) { // 提示文字，跳转链接，按钮文字
+    $("html,body").css({"height": "100%", "overflow": "hidden"}); // 设置而高度100%，遮罩，防止弹窗后背景滑动
+    $(".customer-modal").show();
+    $(".customer-modal small").html(text);
+    $(".customer-modal a").attr("href", href);
+    $(".customer-modal #confirm").html(btnText);
+}
+
+function cancleModal() { // 关闭弹框
+    $("html,body").css({"height": "auto", "overflow": "visible"}); // 解除高度限制
+    $('.customer-modal').hide();
+}
+</script>
+</body>
+</html>
