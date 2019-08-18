@@ -1,0 +1,45 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#swiper-container1 {
+    width: 100%;
+    line-height: 42px;
+    overflow: hidden;
+    background: #fdfdfc;
+    border-bottom: 1px solid #ebf3fe;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.active-nav {
+    border-bottom: 2px solid #0a94ff;
+}
+
+#swiper-container2 .swiper-slide {
+    text-align: center;
+    padding: 100px 0;
+    font-size: 22px;
+    color: #FFF;
+}
+
+.blue-slide {
+    background: #4390EE;
+}
+
+.red-slide {
+    background: #CA4040;
+}
+
+.orange-slide {
+    background: #FF8604;
+}
+
+.green-slide {
+    background: #49a430;
+}
+
+.pink-slide {
+    background: #973e76;
+}
