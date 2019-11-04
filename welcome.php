@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-    <title>Welcome <?php echo $_SERVER['HTTP_HOST']; ?> 欢迎访问德顺下载站</title>
+    <title>Welcome <?php echo $_SERVER['HTTP_HOST']; ?> 欢迎访问德顺新博客</title>
     <link rel="stylesheet" href="css/mustard-ui.min.css">
     <link rel="stylesheet" href="css/base.css">
 </head>
@@ -11,7 +11,7 @@
 <div class="row">
     <div class="col col-lg-8">
         <h5>说明</h5>
-        <p>欢迎来到德顺网络下载站欢迎页，网站暂时不提供检索。</p>
+        <p>欢迎来到德顺新博客，网站正在开发中，具体时间未知。</p>
         <p>如果您需要查找资源，请访问我的网站：</p>
         <ul>
             <li>德顺博客：<a href="http://www.dblog.cc">www.dblog.cc</a></li>
@@ -42,6 +42,6 @@
             <small>&copy;<?php echo date("Y")?> By Deshun</small>
         </p>
     </div>
-</div>
+    </div>
 </body>
 </html>
