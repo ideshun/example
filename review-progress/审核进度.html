@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
-    <title>审核进度</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/bank.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <title>审核进度</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/bank.css">
 </head>
 <body>
 <header class="header">
-    <div class="header-back">
-        <img src="img/backwhite.png" alt="">
-    </div>
-    <div class="header-title">
-        审核进度
-    </div>
+  <div class="header-back">
+    <img src="img/backwhite.png" alt="">
+  </div>
+  <div class="header-title">
+    审核进度
+  </div>
 </header>
 <main>
-    <div class="bank-banner">
-        <div class="review-box">
-            <span class="line-box">
-                <span class="line-inner"></span>
-            </span>
-            <ul class="status-box">
-                <li>
-                   <span class="dot-box on">
-                       <span class="dot-inner">
-                       </span>
-                   </span>
-                    <p>待审核</p>
-                </li>
-                <li>
-                   <span class="dot-box">
-                       <span class="dot-inner">
-                       </span>
-                   </span>
-                    <p>审核中</p>
-                </li>
-                <li>
-                   <span class="dot-box">
-                       <span class="dot-inner">
-                       </span>
-                   </span>
-                    <p>放款成功</p>
-                </li>
-            </ul>
-            <div class="credit-box">
-                <div class="card-logo">
-                    <img src="img/spd-logo.png" alt="">
-                </div>
-                <p>
-                    授信额度：<span>100,000</span>
-                </p>
-            </div>
+  <div class="bank-banner">
+    <div class="review-box">
+        <span class="line-box">
+            <span class="line-inner"></span>
+        </span>
+      <ul class="status-box">
+        <li>
+           <span class="dot-box on">
+               <span class="dot-inner">
+               </span>
+           </span>
+          <p>待审核</p>
+        </li>
+        <li>
+           <span class="dot-box">
+               <span class="dot-inner">
+               </span>
+           </span>
+          <p>审核中</p>
+        </li>
+        <li>
+           <span class="dot-box">
+               <span class="dot-inner">
+               </span>
+           </span>
+          <p>放款成功</p>
+        </li>
+      </ul>
+      <div class="credit-box">
+        <div class="card-logo">
+          <img src="img/spd-logo.png" alt="">
         </div>
+        <p>
+          授信额度：<span>100,000</span>
+        </p>
+      </div>
     </div>
+  </div>
 
-    <div class="apply-quota">
-        <span class="apply-cate">申请额度:</span><input class="apply-num" type="text" value="0.00元">
-        <button class="apply-sub">提交</button>
-    </div>
-    <a href="#" class="go-top">Top</a>
+  <div class="apply-quota">
+    <span class="apply-cate">申请额度:</span><input class="apply-num" type="text" value="0.00元">
+    <button class="apply-sub">提交</button>
+  </div>
+  <a href="#" class="go-top">Top</a>
 </main>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script>
-    $(window).scroll(function () {
-        var scroHei = $(window).scrollTop();//滚动的高度
-        if (scroHei > 50) {
-            $(".header").css("background", "#1578e7");
-        } else {
-            $(".header").css("background", "none");
-        }
-        if (scroHei > 200) {
-            $(".go-top").fadeIn();
-        } else {
-            $(".go-top").fadeOut();
-        }
-    })
+  $(window).scroll(function () {
+    var scroHei = $(window).scrollTop();//滚动的高度
+    if (scroHei > 50) {
+      $(".header").css("background", "#1578e7");
+    } else {
+      $(".header").css("background", "none");
+    }
+    if (scroHei > 200) {
+      $(".go-top").fadeIn();
+    } else {
+      $(".go-top").fadeOut();
+    }
+  })
 </script>
 </body>
 </html>
