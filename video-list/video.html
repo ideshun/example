@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>video list</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+<ul>
+  <li v-for="item in videoList">
+    <h1>{{item.videoTitle}}</h1>
+    <video :src="item.videoUrl">
+
+    </video>
+  </li>
+</ul>
+
+</div>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data:{
+      videoList:[
+        {
+          videoUrl: '',
+          videoTitle: '视频1',
+        }
+      ]
+    }
+  })
+</script>
+</body>
+</html>
