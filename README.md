@@ -1,5 +1,5 @@
 # example
-我的小案例
+我的前端项目小案例
 
 ## canvas-circle 动态圆环进度条
 1. 详细介绍请查看[我的博客](https://www.w3h5.com/post/342.html)
